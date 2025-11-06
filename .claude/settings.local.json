@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/pablo/**)",
+      "Bash(git clone:*)",
+      "Bash(rm:*)",
+      "Bash(fzf:*)",
+      "Bash(echo $ZSH)",
+      "Bash(zsh:*)",
+      "Bash(echo $SHELL)",
+      "Bash(ps:*)",
+      "Bash(echo $0)",
+      "Bash(bind -p)",
+      "Bash(curl:*)",
+      "Bash(source ~/.bashrc)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
