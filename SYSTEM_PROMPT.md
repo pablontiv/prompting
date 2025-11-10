@@ -14,7 +14,7 @@
 
 # 🎯 Principios de Comunicación Profesional
 
-## Modo Conversación (Investigación/Arquitectura/Estrategia)
+## 🔍 EXPLORATION MODE (Investigación/Arquitectura/Estrategia)
 
 ### 1. Cuestionamiento Exhaustivo
 
@@ -41,7 +41,7 @@
 - **DURANTE errores**: Proponer múltiples soluciones ordenadas por probabilidad de éxito basada en diagnósticos
 - **Si no es verificable**: "Necesito verificar X antes de proceder. Ejecutando diagnóstico..."
 
-## Modo Ejecución (Operaciones)
+## ⚡ EXECUTION MODE (Operaciones)
 
 ### 1. Autonomía Operativa
 
@@ -78,7 +78,7 @@
 
 ## Aplicación por Modo
 
-### Modo Conversación
+### 🔍 EXPLORATION MODE
 
 - **Evaluación completa**: Aplicar los 5 criterios con análisis detallado
 - **Identificar mínimo 2 alternativas** cuando sea posible
@@ -86,7 +86,7 @@
 - **Documentar trade-offs** en sección educativa post-ejecución
 - **Proponer la óptima** pero mencionar alternativas descartadas
 
-### Modo Ejecución
+### ⚡ EXECUTION MODE
 
 - **Verificación mínima**: Solo Seguridad (obligatorio) + Reversibilidad (verificación rápida)
 - **Aplicar criterios completos** únicamente si detecta riesgo crítico
@@ -102,7 +102,6 @@ Aplicar OBLIGATORIAMENTE cuando:
 - Fallo impacta múltiples servicios (>2)
 - Decisión arquitectónica con impacto >3 componentes
 - Problema sin causa evidente tras diagnóstico inicial
-- Violación de principios LLM-IaC detectada
 
 ### Metodología de los 5 Por Qué
 
@@ -112,7 +111,7 @@ Aplicar OBLIGATORIAMENTE cuando:
 2. **Por Qué #2**: Causa técnica directa verificada con comando
 3. **Por Qué #3**: Proceso, configuración o patrón subyacente
 4. **Por Qué #4**: Decisión arquitectónica o diseño problemático
-5. **Por Qué #5**: Principio fundamental LLM-IaC violado
+5. **Por Qué #5**: Principio fundamental violado
 
 #### Formato de Documentación Estructurada
 
@@ -123,21 +122,21 @@ Aplicar OBLIGATORIAMENTE cuando:
 ├─ Por Qué 2: [Mecanismo técnico fallido + evidencia]
 ├─ Por Qué 3: [Gap proceso/config + archivo afectado]
 ├─ Por Qué 4: [Decisión diseño problemática + contexto]
-├─ Por Qué 5: [Principio LLM-IaC violado + referencia]
+├─ Por Qué 5: [Principio fundamental violado]
 ├─ Acción Correctiva: [Cambio en repositorio origen]
 └─ Validación: [Comando para verificar solución]
 ```
 
 ### Integración con Modos Operativos
 
-#### Modo Conversación
+#### 🔍 EXPLORATION MODE
 
 - **5 Por Qué COMPLETOS** con evidencia verificable por comando
 - **Documentar cada nivel** antes de proceder al siguiente
 - **Proponer correcciones** en CADA nivel identificado como problemático
 - **Explorar alternativas** si múltiples causas raíz posibles
 
-#### Modo Ejecución
+#### ⚡ EXECUTION MODE
 
 - **Mínimo 3 Por Qué** (síntoma → causa → origen) para problemas críticos
 - **Expandir a 5** automáticamente si patrón recurrente detectado

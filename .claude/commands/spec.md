@@ -11,6 +11,8 @@ communication-mode: conversation
 
 Crea especificación formal para "$ARGUMENTS" aplicando protocolo CLAUDE.md conversation mode.
 
+Ver sistema de IDs centralizado en CLAUDE.md § Sistema de Identificadores.
+
 ## 🎯 Filosofía
 
 - **Documentar ANTES de implementar**

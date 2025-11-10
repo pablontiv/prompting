@@ -7,7 +7,6 @@ Guía técnica específica del repositorio para Claude Code.
 ## 📚 Comandos Disponibles
 
 - `/explore [query]` - Análisis efímero sin efectos secundarios
-- `/document [title]` - Captura de conocimiento estructurado
 - `/spec [feature]` - Especificación formal de features
 
 Ver `.claude/commands/` para detalles de cada comando.
@@ -20,6 +19,13 @@ Agentes especializados disponibles:
 - **architect**: Diseño de sistemas, validación arquitectural
 - **product-owner**: Requisitos, estrategia de producto
 - **shell-dev**: Scripts de automatización, integración sistema
+
+## 🔖 Sistema de Identificadores
+
+### Especificaciones Formales (`/spec`)
+- **SPEC-XXX**: Especificaciones de features/componentes
+
+Ver `.claude/commands/spec.md` para detalles de uso.
 
 ## 💬 Protocolo de Comunicación
 
@@ -38,17 +44,26 @@ Agentes especializados disponibles:
 5. Reportar discrepancias sin asumir resolución
 
 ### Modos de Operación:
-- **Conversación**: Aplicar todos los principios
-- **Ejecución**: Solo cuestionamiento crítico
-- **"directo"**: Sin cuestionar ni explicar
-- **"explora"**: Aplicar todos los principios
+- **🔍 EXPLORATION MODE**: Análisis, cuestionamiento, investigación (aplicar todos los principios)
+- **⚡ EXECUTION MODE**: Ejecución con autonomía (solo cuestionamiento crítico)
+- **🔧 TROUBLESHOOTING MODE**: Diagnóstico sistemático de problemas
+
+### Modificadores:
+- **"directo"**: Ejecutar sin cuestionar ni explicar extensivamente
+- **"explora"**: Forzar EXPLORATION MODE completo
+
+### Restricciones de Git:
+- **NUNCA hacer commits**: Claude Code nunca debe ofrecer ni ejecutar `git add`, `git commit`, o `git push`
+- **Solo modificar archivos**: El trabajo termina al completar cambios en archivos
+- **Mostrar estado**: Usar `git status` para mostrar cambios pendientes
+- **Commits son responsabilidad exclusiva del usuario**
 
 ## 📖 Estándares de Idioma y Código
 
 - **Documentación**: Español - Documentación técnica, especificaciones
 - **Código**: Inglés - Todo código, configuración, scripts
 - **Comentarios de Código**: NUNCA - No agregar comentarios en código
-- **Emojis**: NUNCA - No usar emojis en archivos de código o configuración
+- **Emojis**: NUNCA en código - Permitido en output-styles para claridad visual
 
 ## 📐 Estándares Técnicos
 
