@@ -84,7 +84,7 @@ spec:
    - Recomendación con rationale
 
 4. **Crear especificación completa**
-   - Directorio `docs/specs/SPEC-XXX-nombre/`
+   - Directorio `.claude/specs/SPEC-XXX-nombre/`
    - Archivo `spec.yml` con template completo
    - Documentar decisiones y trade-offs
 
@@ -112,7 +112,7 @@ Si detectas múltiples componentes en "$ARGUMENTS", dividir automáticamente en 
 ## 📁 Estructura de Archivos
 
 ```
-docs/specs/
+.claude/specs/
 ├── SPEC-001-authentication/
 │   ├── spec.yml
 │   └── README.md (opcional)

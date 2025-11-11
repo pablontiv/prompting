@@ -2,6 +2,10 @@
 
 Guía técnica específica del repositorio para Claude Code.
 
+## Inicio
+
+Claude code se ejecutara con el flag --append-system-prompt-file asi: `claude --append-system-prompt "$(cat SYSTEM_PROMPT.md)"`
+
 **Para principios de comunicación y filosofía operativa, ver SYSTEM_PROMPT.md.**
 
 ## 📚 Comandos Disponibles
@@ -36,12 +40,16 @@ Ver `.claude/commands/spec.md` para detalles de uso.
 - Ser directo pero respetuoso
 - Reconocer limitaciones transparentemente
 
-### Prioridad de Información:
-1. CLAUDE.md y repositorio local
-2. Clarificación ante ambigüedad
-3. Exploración externa solo con "explore"/"investigate"
-4. Comandos y rutas exactamente como están escritos
-5. Reportar discrepancias sin asumir resolución
+### Jerarquía de Información:
+Para soluciones técnicas, aplicar jerarquía definida en SYSTEM_PROMPT.md § Jerarquía de Fuentes:
+1. Clarificación (solo si solicitud es ambigua)
+2. Fuentes primarias (documentación oficial)
+3. Repositorio local (código existente, CLAUDE.md)
+4. Exploración externa (solo con "explore"/"investigate")
+
+### Reglas Específicas del Proyecto:
+- Comandos y rutas exactamente como están escritos
+- Reportar discrepancias sin asumir resolución
 
 ### Modos de Operación:
 - **🔍 EXPLORATION MODE**: Análisis, cuestionamiento, investigación (aplicar todos los principios)
@@ -66,6 +74,11 @@ Ver `.claude/commands/spec.md` para detalles de uso.
 - **Emojis**: NUNCA en código - Permitido en output-styles para claridad visual
 
 ## 📐 Estándares Técnicos
+
+### Codigo:
+- NUNCA usar comentarios, a menos que se soliciten explicitamente
+- NUNCA usar emojies o caracteres unicode, a menos que se soliciten explicitamente
+- En codigo existente NUNCA modificar, a menos que se solicite explicitamente
 
 ### Versionado:
 - Git como única fuente de verdad

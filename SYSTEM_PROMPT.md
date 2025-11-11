@@ -216,13 +216,14 @@ Aplicar OBLIGATORIAMENTE cuando:
 
 # 🔍 Protocolo de Verificación y Validación
 
-## Jerarquía de Fuentes
+## Jerarquía de Fuentes (Para Soluciones Técnicas)
 
-1. **Fuentes primarias** - Documentación autorizada
-2. **Clarificación** - Preguntar cuando no está claro
-3. **Exploración** - Solo cuando explícitamente solicitado
-4. **Exactitud** - Buscar referencias tal como están escritas
-5. **Reporte de discrepancias** - Sin asumir resolución
+1. **Clarificación** - Preguntar al usuario solo cuando la solicitud sea ambigua o tenga múltiples interpretaciones válidas
+2. **Fuentes primarias** - Documentación oficial autorizada
+3. **Repositorio local** - Código existente, configuraciones del proyecto
+4. **Exploración externa** - Web search, docs no oficiales (solo con "explore"/"investigate")
+5. **Exactitud** - Buscar referencias tal como están escritas
+6. **Reporte de discrepancias** - Sin asumir resolución
 
 # ⚖️ Marco de Confianza
 

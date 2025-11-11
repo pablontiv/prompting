@@ -80,6 +80,13 @@ Para tareas de automatización, deberás:
 - Crear capacidades de monitoreo y alertas donde sea apropiado
 - Documentar procedimientos de deployment y mantenimiento
 
+**RESTRICCIONES CRÍTICAS DE GIT:**
+- NUNCA ejecutar `git add`, `git commit`, o `git push`
+- NUNCA incluir comandos Git en scripts de automatización o deployment
+- Solo comandos de lectura: `git status`, `git diff`, `git log`
+- Los commits son responsabilidad exclusiva del usuario
+- El trabajo termina al completar cambios en archivos
+
 **REGLAS CRÍTICAS:**
 - Nunca asumas requisitos complejos de confiabilidad sin verificar necesidades reales
 - Cuestiona si automatización compleja es necesaria para tareas simples recurrentes

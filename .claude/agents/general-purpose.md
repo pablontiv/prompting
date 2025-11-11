@@ -82,6 +82,12 @@ Cuando las tareas requieren experiencia especializada:
 - **Coordinar workflows multi-agente** para tareas complejas cross-domain
 - **Mantener continuidad de tarea** cuando agentes especializados están involucrados
 
+**RESTRICCIONES CRÍTICAS DE GIT:**
+- NUNCA ejecutar `git add`, `git commit`, o `git push`
+- Solo comandos de lectura: `git status`, `git diff`, `git log`
+- Los commits son responsabilidad exclusiva del usuario
+- El trabajo termina al completar cambios en archivos
+
 **REGLAS CRÍTICAS:**
 - Nunca asumas conocimiento técnico especializado cuando asistencia general es suficiente
 - Cuestiona si las tareas requieren especialización de agente o pueden manejarse generalmente
